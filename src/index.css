@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chat-header {
+  width: 100%;
+  background-color: #6d4fc2;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  padding-inline: 30px;
+  justify-content: flex-start;
+}
+
+.header-info img {
+  height: 40px;
+  width: 40px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(#f4f0ff, #dacdff);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* filepath: /c:/Usage/Interview/Bot telegram/my-app/src/App.css */
+.app {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 680px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.chat-window {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.message-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bot-avatar {
+  margin-right: 10px;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #6D4FC2;
+}
+
+.message {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+.message-sender {
+  width: 100%;
+  display: flex;
+}
+
+.logo-text {
+  color: white;
+}
+
+.message-sender-user {
+  justify-content: flex-end;
+}
+
+.message-sender .message {
+  max-width: 400px;
+}
+
+.message-bot {
+  text-align: left;
+  background: #f6f2ff;
+  border-radius: 13px 13px 13px 3px;
+  -webkit-border-radius: 13px 13px 13px 3px;
+  -moz-border-radius: 13px 13px 13px 3px;
+  -ms-border-radius: 13px 13px 13px 3px;
+  -o-border-radius: 13px 13px 13px 3px;
+}
+
+.message-user {
+  color: #fff;
+  text-align: right;
+  background: #6D4FC2;
+  border-radius: 13px 13px 3px 13px;
+  -webkit-border-radius: 13px 13px 3px 13px;
+  -moz-border-radius: 13px 13px 3px 13px;
+  -ms-border-radius: 13px 13px 3px 13px;
+  -o-border-radius: 13px 13px 3px 13px;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 503px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6d4fc2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
